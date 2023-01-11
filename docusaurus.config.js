@@ -27,6 +27,8 @@ const config = {
         locales: ['en'],
     },
 
+    plugins: ['@docupotamus/docusaurus-plugin-read-time'],
+
     presets: [
         [
             'classic',
@@ -125,6 +127,13 @@ const config = {
             prism: {
                 theme: lightCodeTheme,
                 darkTheme: darkCodeTheme,
+            },
+            docupotamusReadTimePlugin: {
+                contentSelector: "main[class*='docMainContainer'] article div.markdown > p",
+                percentile: {
+                    ranks: [25, 50],
+                    style: 'p',
+                },
             },
         }),
 };
