@@ -4,15 +4,17 @@ sidebar_position: 1
 
 # `docusaurus-plugin-editor`
 
+```bash
+npm install --save \
+    @docupotamus/docusaurus-plugin-editor \
+    @docupotamus/docusaurus-theme-editor
+```
+
 ## Plugin
 
 Add **Markdown or React** files to `src/pages` to create a **standalone page**:
 
 ### Quickstart
-
-```bash
-npm install --save @docupotamus/docusaurus-plugin-editor
-```
 
 `docusaurus-plugin-editor` extends `plugin-content-docs`. Therefore, to avoid a
 collision from multiple instances, remove `plugin-content-docs` from the preset
@@ -50,5 +52,8 @@ const config = {
 ### Developer Guide
 
 ```bash
-$ npm link @docupotamus/docusaurus-plugin-editor && npm start
+$ npm link @docupotamus/docusaurus-plugin-editor @docupotamus/docusaurus-theme-editor \
+    && npm start
 ```
+
+## Theme
