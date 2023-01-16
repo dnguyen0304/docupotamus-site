@@ -64,6 +64,8 @@ $ npm link @docupotamus/docusaurus-plugin-editor @docupotamus/docusaurus-theme-e
 
 #### Environment Variables
 
+<!-- TODO(dnguyen0304): Document how to find GitHub client ID and secret. -->
+
 ```bash title=".env"
 export CLIENT_ID="{{ CLIENT_ID }}"
 export CLIENT_SECRET="{{ CLIENT_SECRET }}"
