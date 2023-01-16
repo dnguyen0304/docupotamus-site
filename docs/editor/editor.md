@@ -57,3 +57,15 @@ $ npm link @docupotamus/docusaurus-plugin-editor @docupotamus/docusaurus-theme-e
 ```
 
 ## Theme
+
+## Lambda
+
+### `handleOAuthRedirect`
+
+#### Environment Variables
+
+```bash title=".env"
+export CLIENT_ID="{{ CLIENT_ID }}"
+export CLIENT_SECRET="{{ CLIENT_SECRET }}"
+export REFERER_ALLOWLIST="{{ REFERER_ALLOWLIST }}"
+```
