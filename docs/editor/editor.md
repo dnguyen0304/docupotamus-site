@@ -71,3 +71,17 @@ export CLIENT_ID="{{ CLIENT_ID }}"
 export CLIENT_SECRET="{{ CLIENT_SECRET }}"
 export REFERER_ALLOWLIST="{{ REFERER_ALLOWLIST }}"
 ```
+
+## Swizzling
+
+```bash
+npm run swizzle -- --list
+```
+
+```bash
+npm run swizzle @docusaurus/theme-classic {{ COMPONENT }} -- --typescript --wrap
+```
+
+See also:
+- https://docusaurus.io/docs/swizzling
+- https://docusaurus.io/docs/typescript-support
