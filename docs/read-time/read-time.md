@@ -7,7 +7,7 @@ sidebar_position: 1
 ### Developer Guide
 
 ```bash
-$ rm -r lib/ \
+$ rm -rf lib/ \
     && npm link react react-dom \
     && npm run build \
     && npm run watch

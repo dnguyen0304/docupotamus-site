@@ -2,13 +2,38 @@
 sidebar_position: 1
 ---
 
-# `docusaurus-plugin-editor`
+# `docusaurus-theme-checkbox`
+
+## Installing
 
 ```bash
-npm install --save \
-    @docupotamus/docusaurus-plugin-editor \
-    @docupotamus/docusaurus-theme-editor
+npm install --save @docupotamus/docusaurus-theme-checkbox
 ```
+
+## Example
+
+```js
+import TaskList from '@theme/docupotamus-task-list/components/TaskList';
+
+<TaskList>
+- [ ] read work emails
+- [ ] Go to the gym
+- [ ] Then, you have to watch foo and bar.
+- [ ] Hang out with partner for at least 1 hour.
+- [ ] Check the database changes into integration so we can kick off a build before this afternoon.
+</TaskList>
+```
+
+### Developer Guide
+
+```bash
+$ sudo npm link
+```
+
+```bash
+$ npm link @docupotamus/docusaurus-theme-task-list && npm start
+```
+
 
 ## Plugin
 
@@ -47,13 +72,6 @@ const config = {
         ],
     ],
 }
-```
-
-### Developer Guide
-
-```bash
-$ npm link @docupotamus/docusaurus-plugin-editor @docupotamus/docusaurus-theme-editor \
-    && npm start
 ```
 
 ## Theme
@@ -120,7 +138,7 @@ docupotamusEditor: {
 ```js title="theme/Layout/Provider"
 import BaseLayoutProvider from '@theme-init/Layout/Provider';
 import EditorLayoutProvider from '@theme/docupotamus-editor/Layout/Provider';
-import ReadTimeLayoutProvider from '@theme/docupotamus-read-time/theme/Layout/Provider';
+import ReadTimeLayoutProvider from '@theme/docupotamus-read-time/Layout/Provider';
 import React from 'react';
 
 export default function LayoutProvider(props) {
@@ -136,7 +154,7 @@ export default function LayoutProvider(props) {
 
 ```js title="theme/Root"
 import EditorRoot from '@theme/docupotamus-editor/Root';
-import ReadTimeRoot from '@theme/docupotamus-read-time/theme/Root';
+import ReadTimeRoot from '@theme/docupotamus-read-time/Root';
 import * as React from 'react';
 
 export default function Root({ children }) {
