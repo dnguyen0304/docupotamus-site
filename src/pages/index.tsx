@@ -2,7 +2,8 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import clsx from 'clsx';
-import React from 'react';
+import * as React from 'react';
+import Logo from '../components/Logo';
 
 import styles from './index.module.css';
 
@@ -10,7 +11,9 @@ function HomepageHeader() {
     const { siteConfig } = useDocusaurusContext();
     return (
         <header className={clsx('hero hero--primary', styles.heroBanner)}>
+            {/* var(--ifm-navbar-height) */}
             <div className="container">
+                <Logo viewBox='-110 700 2000 600' />
                 <h1 className="hero__title">{siteConfig.title}</h1>
                 <p className="hero__subtitle">{siteConfig.tagline}</p>
                 <div className={styles.buttons}>
