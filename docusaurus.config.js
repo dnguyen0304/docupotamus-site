@@ -3,6 +3,9 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
+/** @type {string} */
+const REPOSITORY_URL = 'https://github.com/dnguyen0304/docupotamus-site';
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
     title: 'Docupotamus',
@@ -27,10 +30,7 @@ const config = {
             ({
                 docs: {
                     sidebarPath: require.resolve('./sidebars.js'),
-                    // Please change this to your repo.
-                    // Remove this to remove the "edit this page" links.
-                    editUrl:
-                        'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+                    editUrl: REPOSITORY_URL,
                 },
             }),
         ],
@@ -53,8 +53,8 @@ const config = {
                         label: 'Docs',
                     },
                     {
-                        href: 'https://github.com/dnguyen0304/docupotamus-site',
                         label: 'GitHub',
+                        href: REPOSITORY_URL,
                         position: 'right',
                     },
                 ],
