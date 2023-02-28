@@ -37,9 +37,6 @@ const config = {
                     editUrl:
                         'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
                 },
-                theme: {
-                    customCss: require.resolve('./src/css/custom.css'),
-                },
             }),
         ],
     ],
