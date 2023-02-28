@@ -5,9 +5,9 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-    title: 'My Site',
-    tagline: 'Dinosaurs are cool',
-    url: 'https://your-docusaurus-test-site.com',
+    title: 'Docupotamus',
+    tagline: 'The fastest docs platform',
+    url: 'https://docupotamus.io',
     baseUrl: '/',
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
