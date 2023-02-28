@@ -11,7 +11,6 @@ function HomepageHeader() {
     const { siteConfig } = useDocusaurusContext();
     return (
         <header className={clsx('hero hero--primary', styles.heroBanner)}>
-            {/* var(--ifm-navbar-height) */}
             <div className='container'>
                 <Logo viewBox='-110 700 2000 600' />
                 <h1 className='hero__title'>{siteConfig.title}</h1>

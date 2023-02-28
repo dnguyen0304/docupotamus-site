@@ -1,9 +1,6 @@
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
-
 .heroBanner {
+    height: calc(100vh - var(--ifm-navbar-height));
+
   padding: 4rem 0;
   text-align: center;
   position: relative;
