@@ -15,7 +15,6 @@
         "typecheck": "tsc"
     },
     "dependencies": {
-        "@docupotamus/docusaurus-plugin-read-time": "0.2.0",
         "@docusaurus/core": "^2.2.x",
         "@docusaurus/preset-classic": "^2.2.x",
         "@mdx-js/react": "^1.6.22",
