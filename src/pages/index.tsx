@@ -7,8 +7,9 @@ import Logo from '../components/Logo';
 
 import styles from './index.module.css';
 
-function HomepageHeader() {
+const HomepageHeader = (): JSX.Element => {
     const { siteConfig } = useDocusaurusContext();
+
     return (
         <header className={clsx('hero hero--primary', styles.heroBanner)}>
             <div className='container'>
