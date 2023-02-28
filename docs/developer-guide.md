@@ -4,6 +4,12 @@ sidebar_position: 3
 
 # Developer Guide
 
+### Publish to NPM
+
+```shell
+$ npm version {{ VERSION }} && git push && git push --tags && npm publish --access=public
+```
+
 ## Conventions
 
 ### CSS
