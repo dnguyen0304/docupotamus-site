@@ -13,11 +13,6 @@ const config = {
     onBrokenMarkdownLinks: 'warn',
     favicon: 'img/favicon.ico',
 
-    // GitHub pages deployment config.
-    // If you aren't using GitHub pages, you don't need these.
-    organizationName: 'facebook', // Usually your GitHub org/user name.
-    projectName: 'docusaurus', // Usually your repo name.
-
     i18n: {
         defaultLocale: 'en',
         locales: ['en'],
@@ -58,7 +53,7 @@ const config = {
                         label: 'Tutorial',
                     },
                     {
-                        href: 'https://github.com/facebook/docusaurus',
+                        href: 'https://github.com/dnguyen0304/docupotamus-site',
                         label: 'GitHub',
                         position: 'right',
                     },
