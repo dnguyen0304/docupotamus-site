@@ -14,7 +14,10 @@ function HomepageHeader() {
             <div className='container'>
                 <Logo viewBox='-110 700 2000 600' />
                 <h1 className='hero__title'>{siteConfig.title}</h1>
-                <p className='hero__subtitle'>{siteConfig.tagline}</p>
+                <p className='hero__subtitle'>
+                    {/* TODO(dnguyen0304): Fix missing cohesion. */}
+                    The <em>fastest</em> docs platform
+                </p>
                 <div className={styles.buttons}>
                     <Link
                         className='button button--secondary button--lg'
