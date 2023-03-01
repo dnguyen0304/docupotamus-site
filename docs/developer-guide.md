@@ -6,6 +6,10 @@ sidebar_position: 3
 
 ### Publish to NPM
 
+:::info
+Remember to execute this command from the directory containing `package.json`.
+:::
+
 ```shell
 $ npm version {{ VERSION }} && git push && git push --tags && npm publish --access=public
 ```
