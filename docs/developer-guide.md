@@ -11,7 +11,10 @@ Remember to execute this command from the directory containing `package.json`.
 :::
 
 ```shell
-$ npm version {{ VERSION }} && git push && git push --tags && npm publish --access=public
+$ npm version {{ VERSION }} \
+    && git push \
+    && git push --tags \
+    && npm publish --access=public
 ```
 
 ## Conventions
