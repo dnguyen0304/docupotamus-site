@@ -23,7 +23,7 @@ const config = {
 
     presets: [
         [
-            'classic',
+            '@docupotamus/docusaurus-preset-classic',
             /** @type {import('@docusaurus/preset-classic').Options} */
             ({
                 docs: {
