@@ -1,0 +1,22 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 16
+  pre_build:
+    commands:
+      - echo Started installing dependencies.
+      - npm install
+      - npm install --no-save dnguyen0304/docusaurus-plugin-read-time#integration
+      - echo Completed installing dependencies SUCCESSFULLY.
+  build:
+    commands:
+      - echo Started building.
+      - npm run build
+      - echo Completed building SUCCESSFULLY.
+artifacts:
+  files:
+    - "**/*"
+  discard-paths: no
+  base-directory: build/
